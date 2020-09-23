@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>СумМатор</title>
+  <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+</head>
+
+<body>
+
+
+
+  <div class="split left">
+
+
+    <input type="number" id="userinput" />
+    <input type="button" onclick="addTo()" value="Добавить" />
+    <p></p>
+    <input type="number" id="userDelete" />
+    <input type="button" onclick="deleteTo()" value="Удалить" />
+
+    <h3>Массив:</h3>
+    <input type="submit" value="+" onclick="fp()">
+    <input type="submit" value="-" onclick="fm()">
+    <div id="array"></div>
+
+
+  </div>
+
+  <div class="split right">
+
+
+    <form>
+      <label>Найти:</label>
+      <input name="sumToFind" type="number" min="0" value="250">
+
+      <label>Погрешность:</label>
+      <input name="criteria" type="number" min="0" value="0"><br>
+
+      <label>Длина комбинации:</label>
+      <input name="combLength" type="number" min="0" value="3">
+
+      <input type="submit" value="Найти" onclick="myFunction()">
+
+
+      <h3>Результат:</h3>
+      <output name="result"></output>
+
+    </form>
+
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
